@@ -14,9 +14,12 @@ class ViewController: UIViewController {
     super.viewDidLoad()
   }
 
+    
+    
   @IBAction func startGameButtonTapped(sender : UIButton) {
     let game = NumberTileGameViewController(dimension: 4, threshold: 2048)
-    self.presentViewController(game, animated: true, completion: nil)
+    game.modalPresentationStyle = .fullScreen
+    self.present(game, animated: true, completion: nil)
   }
 }
 
