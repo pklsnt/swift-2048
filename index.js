@@ -1,7 +1,18 @@
 import React from "react";
-import { AppRegistry, StyleSheet, Text, View } from "react-native";
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  NativeModules,
+} from "react-native";
 
 class HighScores extends React.Component {
+  _close() {
+    console.log("you click close...");
+  }
+
   render() {
     var contents = this.props["scores"].map((score) => (
       <Text key={score.name}>
@@ -13,6 +24,11 @@ class HighScores extends React.Component {
       <View style={styles.container}>
         <Text style={styles.highScoresTitle}>2048 High Scores!</Text>
         <Text style={styles.scores}>{contents}</Text>
+        <Button
+          onPress={() => NativeModules.ReactNativeModalBridge.closeModal()}
+          title="Close"
+          color="#841584"
+        />
       </View>
     );
   }
@@ -38,4 +54,4 @@ const styles = StyleSheet.create({
 });
 
 // Module name
-AppRegistry.registerComponent("RNHighScores", () => HighScores);
+AppRegistry.registerComponent("ReactNativeModal", () => HighScores);
