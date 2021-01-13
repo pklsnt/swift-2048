@@ -55,3 +55,31 @@ const styles = StyleSheet.create({
 
 // Module name
 AppRegistry.registerComponent("ReactNativeModal", () => HighScores);
+
+class BlueScreen extends React.Component {
+  render() {
+    return <View style={styleScreen.blue} />;
+  }
+}
+
+class RedScreen extends React.Component {
+  render() {
+    return <View style={styleScreen.red} />;
+  }
+}
+
+const styleScreen = StyleSheet.create({
+  blue: {
+    backgroundColor: "#0000FF",
+    width: "100%",
+    height: "100%",
+  },
+  red: {
+    backgroundColor: "#FF0000",
+    width: "100%",
+    height: "100%",
+  },
+});
+
+AppRegistry.registerComponent("BlueScreen", () => BlueScreen);
+AppRegistry.registerComponent("RedScreen", () => RedScreen);

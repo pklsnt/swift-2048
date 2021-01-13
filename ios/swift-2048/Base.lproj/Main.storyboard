@@ -39,14 +39,38 @@
                                     <action selector="highScoresButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ghL-vt-fuP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91T-TT-gZB">
+                                <rect key="frame" x="166" y="611" width="82" height="30"/>
+                                <state key="normal" title="Blue Screen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showBlueScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rnq-pM-lMf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aah-9V-viR">
+                                <rect key="frame" x="167.5" y="700" width="79" height="30"/>
+                                <state key="normal" title="Red Screen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showRedScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WpH-ae-Av5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
+                            <constraint firstItem="91T-TT-gZB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="63J-i6-MlK"/>
+                            <constraint firstItem="91T-TT-gZB" firstAttribute="top" secondItem="5pD-VF-juv" secondAttribute="bottom" constant="59" id="6bJ-vW-aFs"/>
                             <constraint firstItem="Ng3-Kq-xkw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9LS-wc-aWw"/>
                             <constraint firstItem="Ng3-Kq-xkw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="J3L-8R-oCZ"/>
+                            <constraint firstItem="aah-9V-viR" firstAttribute="top" secondItem="91T-TT-gZB" secondAttribute="bottom" constant="59" id="Ojd-Z6-dn0"/>
                             <constraint firstItem="5pD-VF-juv" firstAttribute="top" secondItem="Ng3-Kq-xkw" secondAttribute="bottom" constant="59" id="W6E-Xs-fXs"/>
+                            <constraint firstItem="aah-9V-viR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YMh-wt-bh4"/>
+                            <constraint firstItem="91T-TT-gZB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YgH-JE-Psb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5pD-VF-juv" secondAttribute="trailing" constant="10" id="d3U-4v-EPm"/>
                             <constraint firstItem="5pD-VF-juv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="pOZ-p4-P1c"/>
+                            <constraint firstItem="91T-TT-gZB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z1M-VK-1MV"/>
                         </constraints>
                     </view>
                 </viewController>

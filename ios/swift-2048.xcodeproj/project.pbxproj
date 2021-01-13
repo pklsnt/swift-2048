@@ -25,6 +25,8 @@
 		CD4A92D7258558CD00409459 /* ReactNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A92D6258558CD00409459 /* ReactNativeViewController.swift */; };
 		CD4A92E6258570A400409459 /* ReactNativeEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4A92E5258570A400409459 /* ReactNativeEvents.m */; };
 		CD4A92EB2585721300409459 /* ReactNativeModalBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4A92EA2585721300409459 /* ReactNativeModalBridge.m */; };
+		CDE7E1F32586BE8D00CB52ED /* ReactScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7E1F22586BE8D00CB52ED /* ReactScreenViewController.swift */; };
+		CDE7E1F92586C50100CB52ED /* ReactNativeBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7E1F82586C50100CB52ED /* ReactNativeBridge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		CD4A92E5258570A400409459 /* ReactNativeEvents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeEvents.m; sourceTree = "<group>"; };
 		CD4A92E9258571E200409459 /* ReactNativeModalBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactNativeModalBridge.h; sourceTree = "<group>"; };
 		CD4A92EA2585721300409459 /* ReactNativeModalBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeModalBridge.m; sourceTree = "<group>"; };
+		CDE7E1F22586BE8D00CB52ED /* ReactScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactScreenViewController.swift; sourceTree = "<group>"; };
+		CDE7E1F82586C50100CB52ED /* ReactNativeBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeBridge.swift; sourceTree = "<group>"; };
 		DFAD942FC4461EBEF7E35690 /* Pods-swift-2048-swift-2048Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-2048-swift-2048Tests.release.xcconfig"; path = "Target Support Files/Pods-swift-2048-swift-2048Tests/Pods-swift-2048-swift-2048Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +128,8 @@
 				1AC563E2193DCE6000402286 /* AppDelegate.swift */,
 				1AC563E4193DCE6000402286 /* ViewController.swift */,
 				CD4A92D6258558CD00409459 /* ReactNativeViewController.swift */,
+				CDE7E1F22586BE8D00CB52ED /* ReactScreenViewController.swift */,
+				CDE7E1F82586C50100CB52ED /* ReactNativeBridge.swift */,
 				1AC563E6193DCE6000402286 /* Main.storyboard */,
 				1AC563E9193DCE6000402286 /* Images.xcassets */,
 				1AC563E0193DCE6000402286 /* Supporting Files */,
@@ -394,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AE8BEF4193EF260007592BA /* NumberTileGame.swift in Sources */,
+				CDE7E1F92586C50100CB52ED /* ReactNativeBridge.swift in Sources */,
 				CD4A92E6258570A400409459 /* ReactNativeEvents.m in Sources */,
 				CD4A92D7258558CD00409459 /* ReactNativeViewController.swift in Sources */,
 				1AF8F0B619403AA400A7049E /* AccessoryViews.swift in Sources */,
@@ -401,6 +408,7 @@
 				1AC563E5193DCE6000402286 /* ViewController.swift in Sources */,
 				1AE8BEF2193EF1C7007592BA /* AppearanceProvider.swift in Sources */,
 				CD4A92EB2585721300409459 /* ReactNativeModalBridge.m in Sources */,
+				CDE7E1F32586BE8D00CB52ED /* ReactScreenViewController.swift in Sources */,
 				1AC563E3193DCE6000402286 /* AppDelegate.swift in Sources */,
 				1AE339B2193DCF110081FFA4 /* GameModel.swift in Sources */,
 				1AF8F0B81941841000A7049E /* AuxiliaryModels.swift in Sources */,

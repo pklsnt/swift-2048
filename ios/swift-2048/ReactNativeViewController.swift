@@ -9,26 +9,40 @@ import UIKit
 import React
 
 class ReactNativeViewController: UIViewController {
+    
+    private var bridge: RCTBridge!
+
+    init(bridge: RCTBridge) {
+        super.init(nibName: nil, bundle: nil)
+        self.bridge = bridge
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         setupReactNative()
         registerToReactNativeEvents()
     }
 
     private func setupReactNative() {
-        let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
+
         let mockData:NSDictionary = ["scores":
             [
                 ["name":"Alex", "value":"42"],
                 ["name":"Joel", "value":"10"]
             ]
         ]
-
-        let rootView = RCTRootView(
-            bundleURL: jsCodeLocation!,
-            moduleName: "ReactNativeModal",
-            initialProperties: mockData as [NSObject : AnyObject],
-            launchOptions: nil
-        )
+        
+        let rootView = RCTRootView(bridge: bridge, moduleName: "ReactNativeModal", initialProperties:  mockData as [NSObject : AnyObject])
+            
+//        let rootView = RCTRootView(
+//            bridge: bridge,
+//            moduleName: "ReactNativeModal",
+//            initialProperties: mockData as [NSObject : AnyObject],
+//            launchOptions: nil
+//        )
         self.view = rootView
     }
 
